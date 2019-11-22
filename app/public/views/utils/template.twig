@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link  href="/Slim/app/public/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+	<nav id="menu">
+		<li> <a href="{{ base_url() }}">Cadastrar Clientes</a></li>
+		<li> <a href="{{ path_for('clientes') }}">Clientes</a></li>
+	</nav>
+
+	<section id="sidebar">
+		{% block sidebar %}
+		    
+		{% endblock %}
+	</section>
+
+	<section id="container">
+		{% block conteudo %}
+		    
+		{% endblock %}
+
+	</section>
+
+</body>
+</html>

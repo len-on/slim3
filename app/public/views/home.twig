@@ -1,0 +1,11 @@
+{% extends 'utils/template.twig' %}
+{% block sidebar %}
+    {% include 'utils/sidebar.twig' %}
+{% endblock %}
+{% block conteudo %}
+	<form action="{{ path_for('home') }}" method="post">
+		<input type="text" placeholder="Nome do Cliente" name="nome"/><br/>
+		<input type="text" placeholder="Salario do Cliente" name="salario"/><br/>
+		<input type="submit" value="Cadastrar cliente"/>
+	</form>
+{% endblock %}
